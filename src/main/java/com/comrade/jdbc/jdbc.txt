@@ -1,0 +1,53 @@
+===================>JDBC Components<=====================================================
+DriverManager:a).This class manages a list of database drivers
+		      b).Matches connection requests from the java application with the proper 
+		         database driver using communication sub protocol
+		      c).The first driver that recognizes a certain subprotocol under JDBC will 
+		         be used to establish a database Connection.
+Driver:a).This interface handles the communications with the database server.
+       b).You will interact directly with Driver objects very rarely. Instead, 
+          you use DriverManager objects, which manages objects of this type.
+       c).It also abstracts the details associated with working with Driver objects.
+Connection:a).This interface with all methods for contacting a database.
+		   b).The connection object represents communication context, 
+		      i.e., all communication with database is through connection object only.
+Statement:a).You use objects created from this interface to submit the SQL statements to the database. 
+		  b).Some derived interfaces accept parameters in addition to executing stored procedures.
+ResultSet:a).These objects hold data retrieved from a database after you execute an SQL query using 
+		     Statement objects. It acts as an iterator to allow you to move through its data.
+SQLException:a).This class handles any errors that occur in a database application.
+===================>Type-1 driver or JDBC-ODBC bridge driver<============================
+-->JDBC-ODBC bridge driver uses ODBC driver to connect to the database.
+-->The JDBC-ODBC bridge driver converts JDBC method calls into the ODBC function calls.
+-->Driver is also called Universal driver because it can be used to connect to any of the databases.
+-->As a common driver is used in order to interact with different databases, the data transferred
+	through this driver is not so secured.
+-->The ODBC bridge driver is needed to be installed in individual client machines.
+-->Type-1 driver isn’t written in java, that’s why it isn’t a portable driver.
+-->This driver software is built-in with JDK so no need to install separately.
+-->It is a database independent driver.
+==================>Type-2 driver or Native-API driver<===================================
+-->The Native API driver uses the client -side libraries of the database
+-->This driver converts JDBC method calls into native calls of the database API. 
+-->In order to interact with different database,this driver needs their local API, that’s 
+	why data transfer is much more secure as compared to type-1 driver.
+-->Driver needs to be installed separately in individual client machines
+-->The Vendor client library needs to be installed on client machine.
+-->Type-2 driver isn’t written in java, that’s why it isn’t a portable driver.
+-->It is a database dependent driver.
+==================>Type-3 driver or Network Protocol driver<=============================
+-->The Network Protocol driver uses middleware (application server) that converts JDBC 
+	calls directly or indirectly into the vendor-specific database protocol.
+-->Type-3 drivers are fully written in Java, hence they are portable drivers.
+-->No client side library is required because of application server that can perform 
+	many tasks like auditing, load balancing, logging etc.
+-->Network support is required on client machine.
+-->Maintenance of Network Protocol driver becomes costly because it requires database-specific 
+	coding to be done in the middle tier.
+-->Switch facility to switch over from one database to another database.
+==================>Type-4 driver or Thin driver<==========================================
+-->Type-4 driver is also called native protocol driver.
+-->This driver interact directly with database.
+-->Does not require any native library and Middleware server, so no client-side or server-side installation.
+-->It is fully written in Java language, hence they are portable drivers.
+

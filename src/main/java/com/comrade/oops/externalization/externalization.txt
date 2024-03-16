@@ -1,0 +1,3 @@
+-->serialization is jvm controlled programmers dose not have any control
+-->in serialization entire object will be saved,can not save part of object which creates preformance issue
+-->we can save part of object using extrenlizable
