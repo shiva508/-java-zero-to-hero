@@ -1,3 +1,3 @@
 # Reflection
-### Ability of software to analyse it self
-### process of examining the runtime behaviour of a class at runtime
+### Ability of software to analyse itself
+### Process of examining the runtime behaviour of a class at runtime

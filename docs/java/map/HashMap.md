@@ -1,5 +1,5 @@
 # Internal Working of HashMap: How HashMap Works?
-### Java HashMap is a member of the Collections framework and stores key-value pairs. Each key is mapped to a single value, and duplicate keys are not allowed. In this tutorial, we will learn how HashMap internally stores the key-value pairs and how it prevents duplicate keys.
+### Java HashMap is a member of the Collections framework and stores key-value pairs. Each key is mapped to a single value, and duplicate keys are not allowed. we will learn how HashMap internally stores the key-value pairs and how it prevents duplicate keys.
 ## Internal Implementation of HashMap
 ### The HashMap is a HashTable based implementation of the Map interface. It internally maintains an array, also called a “bucket array”.
 ### The size of the bucket array is determined by the initial capacity of the HashMap, the default is 16.

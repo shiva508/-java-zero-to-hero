@@ -17,4 +17,4 @@
 ## 4). HTTP Client
 ## 5). Reading/Writing file operations with string
 ## 6). Flight recorder
-## 7). Optional.isEmpty()
+## 7). Optional.isEmpty() Optional.not()

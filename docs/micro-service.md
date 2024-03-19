@@ -98,8 +98,9 @@
 ###     b). FeignClient
 ### 2). In asynchronous way we can use
 ###     a). JMS Message broker
-###     b). JMS Message broker
+###     b). Kafka broker
 ###            Or
+### 3). Event-driven
 ### 1). HTTP communication
 #### HTTP calls between services is a viable option for service-to-service communication.
 #### Services directly communicates with each other.

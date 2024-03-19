@@ -6,4 +6,4 @@
 ## The tasks that call countDown() are not blocked when they make that call. Only the call to await() is blocked until the count reaches zero.
 ## A typical use is to divide a problem into n independently solvable tasks and create a CountDownLatch with a value of n.
 ## When each task is finished it calls countDown() on the latch. Tasks waiting for the problem to be solved call await() 
-## on the latch to hold themselves back until it is completed
+## Onn the latch to hold themselves back until it is completed

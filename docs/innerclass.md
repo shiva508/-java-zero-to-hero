@@ -1,0 +1,1 @@
+### Can not add static member inside inner class

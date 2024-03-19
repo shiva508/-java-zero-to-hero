@@ -13,7 +13,7 @@ public class WordComparator {
         System.out.println(orderedWords);
         List<String> words=orderedWords.stream().flatMap(prase->Arrays.asList(pattern.split(prase)).stream()).collect(Collectors.toList());
         System.out.println(words);
-        var othtApproach=orderedWords.stream().flatMap(prase->Arrays.asList(pattern.split(prase)).stream()).collect(Collectors.groupingBy(Function.identity(),Collectors.counting()))
+        var otherApproach=orderedWords.stream().flatMap(prase->Arrays.asList(pattern.split(prase)).stream()).collect(Collectors.groupingBy(Function.identity(),Collectors.counting()))
                 .entrySet().stream().sorted(Map.Entry.comparingByKey()).collect(Collectors.toMap(Map.Entry::getKey,Map.Entry::getValue,(oldVal,newVal)->newVal, LinkedHashMap::new));
 
     }

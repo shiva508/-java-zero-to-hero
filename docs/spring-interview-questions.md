@@ -78,5 +78,7 @@
 ## Spring Security 
 #### <----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 ## Track requests in microservice
+### Spring Cloud Sleuth, which provides support for distributed tracing. 
+### It instruments Spring components to gather trace information and can delivers it to a Zipkin Server, which gathers and displays traces.
 #### <----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 

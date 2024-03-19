@@ -1,5 +1,5 @@
 # JVM
-### We knows that bytecode will be executed by the JRE (Java Runtime Environment). 
+### We know that bytecode will be executed by the JRE (Java Runtime Environment). 
 ### But many don't know the fact that JRE is the implementation of Java Virtual Machine (JVM),which analyzes the bytecode, interprets the code, and executes it.
 ## What Is the JVM?
 ### A Virtual Machine is a software implementation of a physical machine. 
@@ -24,7 +24,7 @@
 #### .class file related to Class or Interface or Enum
 #### Modifier info
 #### Variables info
-#### Constantpool info
+#### ConstantPool info
 ### After loading .class file, JVM create Class type Object in Heap Memory to represent binary information.
 ### we have 3 types of class loaders
 #### i). Bootstrap classloader

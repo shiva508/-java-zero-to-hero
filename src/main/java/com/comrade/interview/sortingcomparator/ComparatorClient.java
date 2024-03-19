@@ -1,7 +1,9 @@
 package com.comrade.interview.sortingcomparator;
 
 
-import com.comrade.common_models.person.Person;
+
+
+import com.comrade.utils.Person;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -38,6 +40,11 @@ public class ComparatorClient {
 				.sorted((person1, person2) -> person1.getName().compareTo(person2.getName()))
 				.collect(Collectors.toList());
 		System.out.println(ascendingName);
+
+		var compPerson =persons.stream()
+				.sorted(Comparator.comparing(Person::getName))
+				.collect(Collectors.toList());
+		System.out.println(compPerson);
 
 		persons.stream().min(Person::ageDifference).ifPresentOrElse(
 				youngest -> System.out.println("Youngest: " + youngest), () -> System.out.println("NOTHING IS FOUND"));

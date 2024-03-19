@@ -10,6 +10,7 @@ public class DelayedClient {
             blockingQueue.put(new DelayedWorker(1000, "This is message #1"));
             blockingQueue.put(new DelayedWorker(10000, "This is message #2"));
             blockingQueue.put(new DelayedWorker(4000, "This is message #3"));
+            blockingQueue.put(new DelayedWorker(408, "This is message #4"));
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

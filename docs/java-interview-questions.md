@@ -31,6 +31,9 @@
 
 #### <----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 # Methods in Optional
+### not
+### empty
+### get
 
 #### <----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 # Methods in stream()
@@ -216,7 +219,7 @@
 #### String val = map.get("key");
 ### Similar to the put() API, the logic to find the bucket location is similar to the get() API. Once the bucket is located using the final hash value, the first node at the index location is checked.
 ### If the first node is TreeNode type then TreeNode.getTreeNode(hash, key) API is used to search for the equal key object. If such a TreeNode is found, the value is returned.
-#### if (first instanceof TreeNode)
+#### if (first instanceOf TreeNode)
 ####   return ((TreeNode<K,V>)first).getTreeNode(hash, key);
 ### If the first node is not TreeNode then the search happens in the LinkedList fashion and the next attribute is checked in each iteration until the matching key object is found of a Node.
 #### do {

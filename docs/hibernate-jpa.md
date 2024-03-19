@@ -1,4 +1,4 @@
-# JDBC,Hibernate,JPA,SPRING-DATA-JPA
+# JDBC,Hibernate, JPA, SPRING-DATA-JPA
 #### <----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 ## What is transaction.
 ### A transaction nothing but series of actions that execute successfully.

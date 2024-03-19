@@ -1,5 +1,7 @@
 # Java 8
 
+## Lambda
+## Functional Interface
 ## forEach() method in Iterable interface
 ## default and static methods in Interfaces
 ## Functional Interfaces and Lambda Expressions
