@@ -12,8 +12,8 @@ public class ArrayBasicClient {
         numArray[6]=106;
         numArray[7]=107;
         numArray[8]=108;
-        for (int i = 0; i < numArray.length; i++) {
-            System.out.println(numArray[i]);
+        for (int j : numArray) {
+            System.out.println(j);
         }
         int index=findIndexOfNumber(numArray,108);
         System.out.println(index);
