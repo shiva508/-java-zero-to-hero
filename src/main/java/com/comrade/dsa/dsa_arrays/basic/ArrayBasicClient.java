@@ -15,11 +15,11 @@ public class ArrayBasicClient {
         for (int j : numArray) {
             System.out.println(j);
         }
-        int index=findIndexOfNumber(numArray,108);
+        int index=findIndexOfNumber(numArray,104);
         System.out.println(index);
     }
 
-    private static int findIndexOfNumber(int[] numArray, int input) {
+    public static int findIndexOfNumber(int[] numArray, int input) {
         int index=-1;
         for (int i = 0; i < numArray.length; i++) {
             if (numArray[i]==input){

@@ -1,38 +1,38 @@
 package com.comrade.dsa.dsa_arrays.basic.operations;
 
-public class BasicArrayImpl {
-    private int CURRENT_MAX_INDEX=0;
-    private int LENGTH=2;
+public class BasicArrayOperations {
+    private int CURRENT_MAX_INDEX = 0;
+    private int LENGTH = 2;
     private int [] arrays;
 
-    public BasicArrayImpl(){
-        arrays=new int[LENGTH];
+    public BasicArrayOperations(){
+        arrays = new int[LENGTH];
     }
 
     public void push(int value){
-        if (LENGTH <=CURRENT_MAX_INDEX) {
-            LENGTH=LENGTH*2;
+        if (LENGTH <= CURRENT_MAX_INDEX) {
+            LENGTH = LENGTH*2;
             //Create proxy array with new size
-            int [] proxyArray=new int[LENGTH];
+            int [] proxyArray = new int[LENGTH];
             //Copy values from old array to new array
             for (int i = 0; i < arrays.length; i++) {
-                proxyArray[i]=arrays[i];
+                proxyArray[i] = arrays[i];
             }
-            arrays=proxyArray;
-            proxyArray=null;
+            arrays = proxyArray;
+            proxyArray = null;
         }
-            arrays[CURRENT_MAX_INDEX]=value;
+            arrays[CURRENT_MAX_INDEX] = value;
             CURRENT_MAX_INDEX++;
     }
     public void  pop(){
-        int removableIndex=CURRENT_MAX_INDEX-1;
+        int removableIndex = CURRENT_MAX_INDEX-1;
         this.arrayDataShifter(removableIndex,LENGTH);
         CURRENT_MAX_INDEX--;
     }
 
     public void arrayDataShifter(int currentMaxIndex,int maxArrayLength){
         for (int i = currentMaxIndex; i < maxArrayLength-1; i++) {
-            this.arrays[i]=this.arrays[i+1];
+            this.arrays[i] = this.arrays[i+1];
         }
     }
     public void printData(){
@@ -44,7 +44,7 @@ public class BasicArrayImpl {
 
     public void deleteValue(int value){
         //Step 1 find the index of value
-        int targetIndex= findIndexOfValue(value);
+        int targetIndex = findIndexOfValue(value);
         if (targetIndex==-1){
             System.out.println(value+ "not found in array");
         }else {
@@ -57,8 +57,8 @@ public class BasicArrayImpl {
         int targetIndex=-1;
         //Step 2 find value
         for (int i = 0; i < arrays.length-1; i++) {
-                if (value ==arrays[i]){
-                    targetIndex=i;
+                if (value == arrays[i]){
+                    targetIndex = i;
                     break;
                 }
         }

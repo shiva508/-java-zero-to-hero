@@ -2,7 +2,7 @@ package com.comrade.java_8.arrays.fill;
 
 import java.util.Arrays;
 
-public class fill {
+public class FillClient {
     public static void main(String[] args) {
         String[] array = new String[10];
         Arrays.fill(array,"Batman");

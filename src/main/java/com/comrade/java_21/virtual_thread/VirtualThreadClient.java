@@ -1,4 +1,4 @@
-package com.comrade.java_21.virtualthreads;
+package com.comrade.java_21.virtual_thread;
 
 public class VirtualThreadClient {
     public static void main(String[] args) throws InterruptedException {

@@ -2,7 +2,7 @@ package com.comrade.dsa.dsa_arrays.basic.operations;
 
 public class BasicArrayClient {
     public static void main(String[] args) {
-        BasicArrayImpl basicArray=new BasicArrayImpl();
+        BasicArrayOperations basicArray=new BasicArrayOperations();
         basicArray.push(1);
         basicArray.push(2);
         basicArray.push(3);

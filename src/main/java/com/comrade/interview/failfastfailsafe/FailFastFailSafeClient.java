@@ -6,7 +6,7 @@ import java.util.concurrent.CopyOnWriteArraySet;
 
 public class FailFastFailSafeClient {
     public static void main(String[] args) {
-        //failFastMap();
+        failFastMap();
         //failFastSet();
         //failSafeMap();
         //failSafeSet();
@@ -53,10 +53,9 @@ public class FailFastFailSafeClient {
         stringStringMap.put("A", "Apple");
         stringStringMap.put("B", "Ball");
         stringStringMap.put("C", "Cat");
-        Iterator<String> iterator = stringStringMap.keySet().iterator();
-        while (iterator.hasNext()){
-            System.out.println(iterator.next());
-            stringStringMap.put("D","Dog");
+        for (String s : stringStringMap.keySet()) {
+            System.out.println(s);
+            stringStringMap.put("D", "Dog");
         }
     }
 }
